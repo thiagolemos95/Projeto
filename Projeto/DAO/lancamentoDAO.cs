@@ -16,12 +16,12 @@ namespace Projeto.DAO
             context = Db;
         }
 
-        public void Adiciona(lancamento lancamento)
+        public void Adiciona(Lancamento lancamento)
         {
             context.lancamentos.Add(lancamento);
             context.SaveChanges();
         }
-        public IEnumerable<lancamento> Lista()
+        public IEnumerable<Lancamento> Lista()
         {
             return context.lancamentos.ToList();
         }

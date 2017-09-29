@@ -14,6 +14,6 @@ namespace Projeto.Context
 
         }
 
-        public DbSet<lancamento> lancamentos { get; set; }
+        public DbSet<Lancamento> lancamentos { get; set; }
     }
 }
